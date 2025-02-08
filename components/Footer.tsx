@@ -2,7 +2,7 @@
 import React from 'react'
 import Image from 'next/image'
 import logo from '@/public/assets/logo.png'
-import { MapPin, Mail, Phone, Facebook, Twitter, Linkedin, Instagram, Star, Info, Briefcase, FileText, Shield } from 'lucide-react'
+import { MapPin, Mail, Phone, Facebook, Twitter, Linkedin, Instagram, Star, Info, Briefcase, FileText, Shield, Github } from 'lucide-react'
 
 const Footer = () => {
   return (
@@ -95,7 +95,20 @@ const Footer = () => {
               </a>
             ))}
           </div>
-          <p>© 2024 PN AD SOLUTION. All rights reserved.</p>
+          <p>©{new Date().getFullYear()} PN AD SOLUTION. All rights reserved.</p>
+           <p className="flex items-center justify-center gap-2">
+            Developed by
+            <a
+              href="https://github.com/karmveershubham"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-1 text-blue-400 hover:text-blue-500 transition"
+            >
+              <Github size={20} />
+              <span>karmveershubham</span>
+            </a>
+          </p>
+
         </div>
       </div>
     </footer>
